@@ -35,9 +35,8 @@
         <!--配置mapper映射文件-->
 <!--        <property name="mapperLocations" value="classpath:mappers/*.xml"></property>-->
     </bean>
-    <!--配置mapper接口的扫描，将指定包下所有的mapper接口，通过sqlsession创建代理实现类对象，并将这些对象交给ioc容器管理-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.yjw.ssm.mapper"></property>
     </bean>
-
+       
 </beans>
